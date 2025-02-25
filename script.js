@@ -3,6 +3,8 @@ const video = document.getElementById("video");
 const h1 = document.getElementById("h");
 const input = document.getElementById("solutia");
 
+video.play();
+
 setTimeout(() => {
     video.pause();
     h1.textContent = "Buna seara! Doamna Mihaita Boss, care este cuvantul?";
