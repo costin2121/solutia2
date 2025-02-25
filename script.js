@@ -7,7 +7,10 @@ startButton.addEventListener("click", () => {
     startButton.style.display = "none";
     video.style.display = "inline";
     input.style.display = "inline";
-    video.play();
+    video.load(); // Ensure the video is loaded
+    video.play().catch(error => {
+        console.error("Error attempting to play the video:", error);
+    });
 });
 
 setTimeout(() => {
