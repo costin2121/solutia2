@@ -21,6 +21,8 @@ setTimeout(() => {
 
 input.addEventListener("input", () => {
     let value = input.value.toLowerCase().replace(/-/g, '').replace(/ /g, '');
+    value = value.normalize("NFD").replace(/[\u0300-\u036f]/g, ""); // Normalize and remove diacritics
+
     if (value === "luamiaicoaieleingura" || value === "luamiaicuaieleingura") {
         h1.textContent = "Felicitari!";
         h1.style.color = "green";
