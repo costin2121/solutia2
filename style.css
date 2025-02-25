@@ -4,7 +4,7 @@
     display: none;
     margin: 20px;
     background-color: rgb(0, 168, 168);
-    width: 375px;
+    width: 20%;
     height: 50px;
     font-size: 25px;
     border-radius: 20px;
@@ -24,10 +24,12 @@ body {
     border-radius: 20px;
     border: solid darkcyan 2px;
     display: none;
+    width: 20%;
+    height: 5%;
 }
 
 #start {
-    width: 150px;
+    width: 7.5%;
     height: 50px;
     border-radius: 15px;
     border: solid darkcyan 2px;
