@@ -1,9 +1,14 @@
-
 const video = document.getElementById("video");
 const h1 = document.getElementById("h");
 const input = document.getElementById("solutia");
+const startButton = document.getElementById("start");
 
-video.play();
+startButton.addEventListener("click", function () {
+    startButton.style.display = "none";
+    video.style.display = "inline";
+    input.style.display = "inline";
+    video.play();
+});
 
 setTimeout(() => {
     video.pause();
